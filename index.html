@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>クッキークリッカー</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <audio id="clickSound" src="click.mp3" preload="auto"></audio>
+        <h1>クッキークリッカー</h1>
+        
+        <div class="game-area">
+            <div class="score-container">
+                <h2>クッキー: <span id="score">0</span></h2>
+                <p>1クリックあたり: <span id="click-value">1</span></p>
+            </div>
+            
+            <div class="cookie-container">
+                <img src="cookie.svg" alt="クッキー" id="cookie" class="cookie">
+            </div>
+        </div>
+        
+        <div class="upgrades-container">
+            <h2>アップグレード</h2>
+            <div class="upgrades-list">
+                <div class="upgrade" id="upgrade1">
+                    <h3>カーソル</h3>
+                    <p>クリック値 +1</p>
+                    <p>価格: <span id="upgrade1-cost">10</span> クッキー</p>
+                    <button id="buy-upgrade1">購入</button>
+                </div>
+                
+                <div class="upgrade" id="upgrade2">
+                    <h3>グランマ</h3>
+                    <p>クリック値 +5</p>
+                    <p>価格: <span id="upgrade2-cost">50</span> クッキー</p>
+                    <button id="buy-upgrade2">購入</button>
+                </div>
+                
+                <div class="upgrade" id="upgrade3">
+                    <h3>ファーム</h3>
+                    <p>クリック値 +10</p>
+                    <p>価格: <span id="upgrade3-cost">100</span> クッキー</p>
+                    <button id="buy-upgrade3">購入</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button id="save-game">ゲームを保存</button>
+            <button id="reset-game">リセット</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
